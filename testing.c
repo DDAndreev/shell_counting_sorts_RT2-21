@@ -20,6 +20,7 @@ int main() {
         }
         clock_t start = clock();
         counting_sort(mass, range);
+        //shell_sort(mass, range);
         clock_t end = clock();
         time = (int)((end - start) / CLOCKS_PER_SEC);
         fprintf(file, "%d %d\n", range, time);
